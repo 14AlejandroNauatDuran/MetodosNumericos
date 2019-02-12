@@ -30,41 +30,37 @@ public class Tema1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        Salir = new javax.swing.JButton();
         Menu = new javax.swing.JButton();
+        Salir = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
         ValorReal = new javax.swing.JLabel();
-        VALORPROMEDIO = new javax.swing.JLabel();
         campoR = new javax.swing.JTextField();
+        VALORPROMEDIO = new javax.swing.JLabel();
         campoA = new javax.swing.JTextField();
-        REONDEAR = new javax.swing.JRadioButton();
-        TRUNCAR = new javax.swing.JRadioButton();
+        calcular = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        RESULTADOabsoluto = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        RESULTADOrelativo = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         cantiTRUNCAR = new javax.swing.JTextField();
-        calcular = new javax.swing.JButton();
-        RESULTADOabsoluto = new javax.swing.JTextField();
-        RESULTADOrelativo = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        Fondo = new javax.swing.JLabel();
+        REONDEAR = new javax.swing.JRadioButton();
+        TRUNCAR = new javax.swing.JRadioButton();
         jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
+        RESET = new javax.swing.JToggleButton();
+        Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Salir.setText("salir");
-        Salir.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SalirActionPerformed(evt);
-            }
-        });
-        getContentPane().add(Salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 30, -1, -1));
-
-        Menu.setText("menu");
+        Menu.setFont(new java.awt.Font("Sitka Small", 1, 14)); // NOI18N
+        Menu.setText("Menú");
         Menu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 MenuActionPerformed(evt);
@@ -72,111 +68,157 @@ public class Tema1 extends javax.swing.JFrame {
         });
         getContentPane().add(Menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
 
-        ValorReal.setText("VALOR REAL");
-        getContentPane().add(ValorReal, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, -1, -1));
+        Salir.setFont(new java.awt.Font("Sitka Small", 1, 14)); // NOI18N
+        Salir.setText("Salir");
+        Salir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SalirActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 30, -1, -1));
 
-        VALORPROMEDIO.setText("VALOR PROMEDIO");
-        getContentPane().add(VALORPROMEDIO, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, -1, -1));
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel9.setText("CALCULAR ERRORES");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 70, -1, -1));
+
+        ValorReal.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        ValorReal.setText("VALOR REAL");
+        getContentPane().add(ValorReal, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, -1));
 
         campoR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 campoRActionPerformed(evt);
             }
         });
-        getContentPane().add(campoR, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, 170, 30));
+        getContentPane().add(campoR, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 110, 180, 30));
+
+        VALORPROMEDIO.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        VALORPROMEDIO.setText("VALOR PROMEDIO");
+        getContentPane().add(VALORPROMEDIO, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, -1, -1));
 
         campoA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 campoAActionPerformed(evt);
             }
         });
-        getContentPane().add(campoA, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 140, 170, 30));
+        getContentPane().add(campoA, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 180, 30));
 
-        REONDEAR.setText("REDONDEAR");
-        REONDEAR.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                REONDEARActionPerformed(evt);
-            }
-        });
-        getContentPane().add(REONDEAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, -1, -1));
-
-        TRUNCAR.setText("TRUNCAR");
-        TRUNCAR.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TRUNCARActionPerformed(evt);
-            }
-        });
-        getContentPane().add(TRUNCAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 350, -1, -1));
-
-        jLabel3.setText("Cuantos Numeros");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 350, -1, -1));
-
-        cantiTRUNCAR.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cantiTRUNCARActionPerformed(evt);
-            }
-        });
-        getContentPane().add(cantiTRUNCAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 350, 50, 20));
-
+        calcular.setFont(new java.awt.Font("Sitka Small", 1, 14)); // NOI18N
         calcular.setText("CALCULAR");
         calcular.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 calcularActionPerformed(evt);
             }
         });
-        getContentPane().add(calcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 190, -1, -1));
+        getContentPane().add(calcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, -1, -1));
+
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel8.setText("RESULTADOS");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, -1, -1));
+
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        jLabel1.setText("ERROR ABSOLUTO");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, -1, -1));
 
         RESULTADOabsoluto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 RESULTADOabsolutoActionPerformed(evt);
             }
         });
-        getContentPane().add(RESULTADOabsoluto, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, 170, -1));
+        getContentPane().add(RESULTADOabsoluto, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, 170, 40));
+
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        jLabel2.setText("ERROR RELATIVO");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, -1, -1));
 
         RESULTADOrelativo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 RESULTADOrelativoActionPerformed(evt);
             }
         });
-        getContentPane().add(RESULTADOrelativo, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 270, 170, -1));
+        getContentPane().add(RESULTADOrelativo, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 320, 170, 40));
 
-        jLabel1.setText("ERROR ABSOLUTO");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, -1, -1));
+        jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(240, 240, 240));
+        jLabel10.setText("¿DESEAS REDONDEAR O TRUNCAR?");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, -1, -1));
 
-        jLabel2.setText("ERROR RELATIVO");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, -1, -1));
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(240, 240, 240));
+        jLabel3.setText("¿Cuántos números?");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 450, -1, -1));
 
-        jLabel4.setText("ABSOLUTO");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 460, -1, -1));
+        cantiTRUNCAR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cantiTRUNCARActionPerformed(evt);
+            }
+        });
+        getContentPane().add(cantiTRUNCAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 440, 40, 30));
 
-        jLabel5.setText("RELATIVO");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 500, -1, -1));
+        REONDEAR.setBackground(new java.awt.Color(0, 0, 0));
+        REONDEAR.setFont(new java.awt.Font("Sitka Small", 1, 14)); // NOI18N
+        REONDEAR.setForeground(new java.awt.Color(240, 240, 240));
+        REONDEAR.setText("REDONDEAR");
+        REONDEAR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                REONDEARActionPerformed(evt);
+            }
+        });
+        getContentPane().add(REONDEAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 480, -1, -1));
+
+        TRUNCAR.setBackground(new java.awt.Color(0, 0, 0));
+        TRUNCAR.setFont(new java.awt.Font("Sitka Small", 1, 14)); // NOI18N
+        TRUNCAR.setForeground(new java.awt.Color(240, 240, 240));
+        TRUNCAR.setText("TRUNCAR");
+        TRUNCAR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TRUNCARActionPerformed(evt);
+            }
+        });
+        getContentPane().add(TRUNCAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 480, -1, -1));
+
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(240, 240, 240));
+        jLabel6.setText("RESULTADOS");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 520, -1, -1));
+
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(240, 240, 240));
+        jLabel4.setText("ERROR ABSOLUTO");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 550, -1, -1));
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 460, 100, -1));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 570, 170, 40));
+
+        jLabel5.setFont(new java.awt.Font("Sitka Small", 3, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(240, 240, 240));
+        jLabel5.setText("ERROR RELATIVO");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 550, -1, -1));
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 500, 100, -1));
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 570, 160, 40));
+
+        RESET.setFont(new java.awt.Font("Sitka Small", 1, 14)); // NOI18N
+        RESET.setText("RESET");
+        RESET.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RESETActionPerformed(evt);
+            }
+        });
+        getContentPane().add(RESET, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 640, -1, -1));
 
         Fondo.setBackground(new java.awt.Color(255, 255, 255));
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fondo/IMG-20190202-WA0031.jpg"))); // NOI18N
         Fondo.setText("nm");
-        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 695));
-
-        jLabel6.setForeground(new java.awt.Color(46, 159, 225));
-        jLabel6.setText("RESULTADOS TRUNCADOS O REDONDEADOS");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 410, -1, -1));
-
-        jLabel7.setText("jLabel7");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 60, -1, -1));
+        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 380, 695));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -238,6 +280,20 @@ public class Tema1 extends javax.swing.JFrame {
     Double reAb = Double.parseDouble(RESULTADOabsoluto.getText());
     Double reRe = Double.parseDouble(RESULTADOrelativo.getText());
     int cant = Integer.parseInt(cantiTRUNCAR.getText());
+     
+    /*double parteEnte,parteEntera,reAb1,reRe1;
+     reAb1=reAb;
+     parteEnte=Math.floor(reAb);
+     reAb1=(reAb1-parteEnte)*Math.pow(10,cant);
+    reAb1 =Math.round(reAb1);
+    reAb1 =(reAb1/Math.pow(10,cant))+parteEnte;
+     
+    reRe1=reRe;
+   parteEntera=Math.floor(reRe);
+    reRe1=(reRe1-parteEntera)*Math.pow(10,cant);
+    reRe1 =Math.round(reRe1);
+    reRe1 =(reRe1/Math.pow(10,cant))+parteEntera;*/
+    
     cant*=100;
     Double reAb1 = Math.rint(reAb*cant)/cant;
     Double reRe1 = Math.rint(reRe*cant)/cant;
@@ -283,6 +339,18 @@ public class Tema1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
 
+    private void RESETActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RESETActionPerformed
+        RESULTADOabsoluto.setText("");
+        RESULTADOrelativo.setText("");
+        campoA.setText("");
+        campoR.setText("");
+        cantiTRUNCAR.setText("");
+        jTextField1.setText("");
+        jTextField2.setText("");
+        REONDEAR.setSelected(false);
+        TRUNCAR.setSelected(false);
+    }//GEN-LAST:event_RESETActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -322,6 +390,7 @@ public class Tema1 extends javax.swing.JFrame {
     private javax.swing.JLabel Fondo;
     private javax.swing.JButton Menu;
     private javax.swing.JRadioButton REONDEAR;
+    private javax.swing.JToggleButton RESET;
     private javax.swing.JTextField RESULTADOabsoluto;
     private javax.swing.JTextField RESULTADOrelativo;
     private javax.swing.JButton Salir;
@@ -333,12 +402,14 @@ public class Tema1 extends javax.swing.JFrame {
     private javax.swing.JTextField campoR;
     private javax.swing.JTextField cantiTRUNCAR;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
