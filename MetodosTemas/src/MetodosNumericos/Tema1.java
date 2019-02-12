@@ -49,8 +49,9 @@ public class Tema1 extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
         Fondo = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -165,13 +166,17 @@ public class Tema1 extends javax.swing.JFrame {
         });
         getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 500, 100, -1));
 
+        Fondo.setBackground(new java.awt.Color(255, 255, 255));
+        Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fondo/IMG-20190202-WA0031.jpg"))); // NOI18N
+        Fondo.setText("nm");
+        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 695));
+
         jLabel6.setForeground(new java.awt.Color(46, 159, 225));
         jLabel6.setText("RESULTADOS TRUNCADOS O REDONDEADOS");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 410, -1, -1));
 
-        Fondo.setBackground(new java.awt.Color(255, 255, 255));
-        Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fondo/IMG-20190202-WA0031.jpg"))); // NOI18N
-        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 695));
+        jLabel7.setText("jLabel7");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 60, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -230,7 +235,17 @@ public class Tema1 extends javax.swing.JFrame {
     }//GEN-LAST:event_RESULTADOabsolutoActionPerformed
 
     private void REONDEARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_REONDEARActionPerformed
-        
+    Double reAb = Double.parseDouble(RESULTADOabsoluto.getText());
+    Double reRe = Double.parseDouble(RESULTADOrelativo.getText());
+    int cant = Integer.parseInt(cantiTRUNCAR.getText());
+    cant*=100;
+    Double reAb1 = Math.rint(reAb*cant)/cant;
+    Double reRe1 = Math.rint(reRe*cant)/cant;
+    
+    String reAb2 = String.valueOf(reAb1);
+    String reRe2 = String.valueOf(reRe1);
+    jTextField1.setText(reAb2);
+    jTextField2.setText(reRe2);
     }//GEN-LAST:event_REONDEARActionPerformed
 
     private void TRUNCARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TRUNCARActionPerformed
@@ -323,6 +338,7 @@ public class Tema1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
