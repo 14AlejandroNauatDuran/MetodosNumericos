@@ -4,6 +4,9 @@
  * and open the template in the editor.
  */
 package MetodosNumericos;
+    import java.math.*;
+
+import java.text.DecimalFormat;
 
 /**
  *
@@ -42,6 +45,11 @@ public class Tema1 extends javax.swing.JFrame {
         RESULTADOrelativo = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
         Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -74,14 +82,14 @@ public class Tema1 extends javax.swing.JFrame {
                 campoRActionPerformed(evt);
             }
         });
-        getContentPane().add(campoR, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, 170, 30));
+        getContentPane().add(campoR, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, 170, 30));
 
         campoA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 campoAActionPerformed(evt);
             }
         });
-        getContentPane().add(campoA, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 140, 170, 30));
+        getContentPane().add(campoA, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 140, 170, 30));
 
         REONDEAR.setText("REDONDEAR");
         REONDEAR.addActionListener(new java.awt.event.ActionListener() {
@@ -89,7 +97,7 @@ public class Tema1 extends javax.swing.JFrame {
                 REONDEARActionPerformed(evt);
             }
         });
-        getContentPane().add(REONDEAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, -1, -1));
+        getContentPane().add(REONDEAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, -1, -1));
 
         TRUNCAR.setText("TRUNCAR");
         TRUNCAR.addActionListener(new java.awt.event.ActionListener() {
@@ -97,17 +105,17 @@ public class Tema1 extends javax.swing.JFrame {
                 TRUNCARActionPerformed(evt);
             }
         });
-        getContentPane().add(TRUNCAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 220, -1, -1));
+        getContentPane().add(TRUNCAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 350, -1, -1));
 
         jLabel3.setText("Cuantos Numeros");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 260, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 350, -1, -1));
 
         cantiTRUNCAR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cantiTRUNCARActionPerformed(evt);
             }
         });
-        getContentPane().add(cantiTRUNCAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 250, 50, 30));
+        getContentPane().add(cantiTRUNCAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 350, 50, 20));
 
         calcular.setText("CALCULAR");
         calcular.addActionListener(new java.awt.event.ActionListener() {
@@ -115,28 +123,53 @@ public class Tema1 extends javax.swing.JFrame {
                 calcularActionPerformed(evt);
             }
         });
-        getContentPane().add(calcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 320, -1, -1));
+        getContentPane().add(calcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 190, -1, -1));
 
         RESULTADOabsoluto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 RESULTADOabsolutoActionPerformed(evt);
             }
         });
-        getContentPane().add(RESULTADOabsoluto, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 450, 150, -1));
+        getContentPane().add(RESULTADOabsoluto, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, 170, -1));
 
         RESULTADOrelativo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 RESULTADOrelativoActionPerformed(evt);
             }
         });
-        getContentPane().add(RESULTADOrelativo, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 500, 150, -1));
+        getContentPane().add(RESULTADOrelativo, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 270, 170, -1));
 
         jLabel1.setText("ERROR ABSOLUTO");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 450, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, -1, -1));
 
         jLabel2.setText("ERROR RELATIVO");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 500, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, -1, -1));
 
+        jLabel4.setText("ABSOLUTO");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 460, -1, -1));
+
+        jLabel5.setText("RELATIVO");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 500, -1, -1));
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 460, 100, -1));
+
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 500, 100, -1));
+
+        jLabel6.setForeground(new java.awt.Color(46, 159, 225));
+        jLabel6.setText("RESULTADOS TRUNCADOS O REDONDEADOS");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 410, -1, -1));
+
+        Fondo.setBackground(new java.awt.Color(255, 255, 255));
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fondo/IMG-20190202-WA0031.jpg"))); // NOI18N
         getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 695));
 
@@ -202,6 +235,20 @@ public class Tema1 extends javax.swing.JFrame {
 
     private void TRUNCARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TRUNCARActionPerformed
         String cantidad = cantiTRUNCAR.getText();
+        int canti= Integer.parseInt(cantidad);
+        String Ra = RESULTADOabsoluto.getText();
+        double doble1 = Double.parseDouble(Ra);
+        doble1 = Math.round( doble1 * Math.pow(10, canti)) / Math.pow(10, canti); 
+        String doble2 = String.valueOf(doble1);
+        jTextField1.setText(doble2);
+        String Rr = RESULTADOrelativo.getText();
+        double doble3 = Double.parseDouble(Rr);
+        doble3 = Math.round( doble3 * Math.pow(10, canti)) / Math.pow(10, canti); 
+        String doble4 = String.valueOf(doble3);
+        jTextField2.setText(doble4);
+                
+   
+        
         
     }//GEN-LAST:event_TRUNCARActionPerformed
 
@@ -212,6 +259,14 @@ public class Tema1 extends javax.swing.JFrame {
     private void RESULTADOrelativoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RESULTADOrelativoActionPerformed
         
     }//GEN-LAST:event_RESULTADOrelativoActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -265,5 +320,10 @@ public class Tema1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }
