@@ -160,6 +160,32 @@ public class Tema1 extends javax.swing.JFrame {
 
     private void calcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcularActionPerformed
         
+        
+         String valorR, valorA;
+        float flotanteR, flotanteA;
+        
+        valorR=campoR.getText();
+        valorA=campoA.getText();
+        flotanteA=Float.parseFloat(valorA);
+        flotanteR=Float.parseFloat(valorR);
+        
+        float valorAbsoluto, valorRelativo;
+        
+        valorAbsoluto=flotanteR-flotanteA;
+        if(valorAbsoluto < 0){
+            valorAbsoluto*=-1;
+        }
+         valorRelativo=(flotanteR-flotanteA)/flotanteR;
+        if(valorRelativo < 0){
+            valorRelativo*=-1;
+        }
+        
+       
+        String absoluto, relativo;
+        absoluto=Float.toString(valorAbsoluto);
+        relativo=Float.toString(valorRelativo);
+        RESULTADOabsoluto.setText(absoluto);
+        RESULTADOrelativo.setText(relativo);                                   
     }//GEN-LAST:event_calcularActionPerformed
 
     private void campoAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoAActionPerformed
