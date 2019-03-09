@@ -31,6 +31,8 @@ public class frmPrincipal extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         PuntoFijo = new javax.swing.JMenuItem();
+        Newton = new javax.swing.JMenuItem();
+        Secante = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -46,7 +48,28 @@ public class frmPrincipal extends javax.swing.JFrame {
         jMenu1.add(jMenuItem1);
 
         PuntoFijo.setText("Punto fijo");
+        PuntoFijo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PuntoFijoActionPerformed(evt);
+            }
+        });
         jMenu1.add(PuntoFijo);
+
+        Newton.setText("Newton");
+        Newton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NewtonActionPerformed(evt);
+            }
+        });
+        jMenu1.add(Newton);
+
+        Secante.setText("Secante");
+        Secante.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SecanteActionPerformed(evt);
+            }
+        });
+        jMenu1.add(Secante);
 
         jMenuBar1.add(jMenu1);
 
@@ -78,6 +101,33 @@ public class frmPrincipal extends javax.swing.JFrame {
         
         biseccion.setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void PuntoFijoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PuntoFijoActionPerformed
+        // TODO add your handling code here:
+        dlgPuntoFijo PuntoFijo = new dlgPuntoFijo(this,true);
+        
+        PuntoFijo.setLocationRelativeTo(this);
+        
+        PuntoFijo.setVisible(true);
+    }//GEN-LAST:event_PuntoFijoActionPerformed
+
+    private void NewtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NewtonActionPerformed
+        // TODO add your handling code here:
+        dlgNewton Newton = new dlgNewton(this,true);
+        
+        Newton.setLocationRelativeTo(this);
+        
+        Newton.setVisible(true);
+    }//GEN-LAST:event_NewtonActionPerformed
+
+    private void SecanteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SecanteActionPerformed
+        // TODO add your handling code here:
+        dlgSecante Secante = new dlgSecante(this,true);
+        
+        Secante.setLocationRelativeTo(this);
+        
+        Secante.setVisible(true);
+    }//GEN-LAST:event_SecanteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -115,7 +165,9 @@ public class frmPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem Newton;
     private javax.swing.JMenuItem PuntoFijo;
+    private javax.swing.JMenuItem Secante;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;

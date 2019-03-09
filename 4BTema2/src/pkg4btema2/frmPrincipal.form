@@ -21,6 +21,25 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Punto fijo"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PuntoFijoActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="Newton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Newton"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="NewtonActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="Secante">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Secante"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SecanteActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>
