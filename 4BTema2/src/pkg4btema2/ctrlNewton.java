@@ -17,11 +17,11 @@ public class ctrlNewton {
     }
     
     private double getEvaluacion1(double xi){
-        return Math.pow(Math.E, -xi)-xi;
+        return Math.pow(xi, 3)+(4*(Math.pow(xi,2)))-10;
     }
     
     private double getEvaluacion2(double xi){
-        return -(Math.pow(Math.E, -xi))-1;
+        return (3*(Math.pow(xi, 2)))+(8*(xi));
     }
     
     private boolean haySolucion(){

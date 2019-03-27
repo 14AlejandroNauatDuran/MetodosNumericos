@@ -26,7 +26,8 @@ public class ctrlPuntoFijo {
     
     
     private double getEvaluacion(double x){
-     return Math.pow(Math.E, -x );
+     return ((9.8 * x)/15)*(1-Math.pow(Math.E,-(15/x)*9));
+     //return 2*x - (Math.sin(x)) -1;
 
     }
     
